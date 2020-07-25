@@ -9,7 +9,7 @@ int main() {
 
   std::cin >> length;
 
-  namegenplusplus::PrintRg(length);
+  namegenplusplus::PrintSrg(length);
 
   return 0;
 
