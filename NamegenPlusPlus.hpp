@@ -17,19 +17,19 @@
 
 namespace namegenplusplus {
 	static std::string SensibleNamegen(int length) {
-		const char* names[] = {"sophia","sanjay","jacob","jon","isabella","guido","emma","william","jayden","mehmet","emily","mia","noah","michael", "ethan",
-		"chloe","aiden","daniel","elizabeth","ava","avery","benjamin","gennady","david","sofia","grace","andrew","bjarne","logan","zoey","alexis","lucas","gabriel",
-		"kaylee","isaac","taylor","evan","landon","jack","alexa","fabrice","aaron","brandon","linus","steve","dough","connor","arianna","scarlett","eva", "bourne",
-		"dennis","james","adam","john","anders","stephen","anders","jeff","ian","tim","brian","ken","ferhat","richard","petr","donald"};
+		const char* names[] = {"Sophia","Sanjay","Jacob","Jon","Isabella","Guido","Emma","William","Jayden","Mehmet","Emily","Mia","Noah","Michael", "ethan",
+		"Chloe","Aiden","Daniel","Elizabeth","Ava","Avery","Benjamin","Gennady","David","Sofia","Grace","Andrew","Bjarne","Logan","Zoey","Alexis","Lucas","Gabriel",
+		"Kaylee","Isaac","Taylor","Evan","Landon","Jack","Alexa","Fabrice","Aaron","Brandon","Linus","Steve","Dough","Connor","Arianna","Scarlett","Eva", "bourne",
+		"Dennis","James","Adam","John","Anders","Stephen","Jeff","Ian","Tim","Brian","Ken","Ferhat","Richard","Petr","Donald"};
 		
-		const char* surnames[] = {"smith","johnson","williams","brown","jones","rossum","watson","stone","miller","davis","torvalds","garcia","rodrigez","wilson", "ethan",
-		"anderson","clarke","thomas","lee","ava","white","moore","hernandez","harris","sofia","grace","lewis","stroustrup","hall","zoey",
-		"walker","perez","gabriel", "lopez","newton","edison","evan","robinson","dorsey","alexa","fabrice","eder","fischer","clark","jobs",
-		"doug","connor","arianna","scarlett","eva","again","schwarz", "maier","mayr","egger","claes","nielsen", "petersen", "madsen", "ilves",
-		"robert","leroy","lion","martin","hawking","meyer","weber","schulz","becker","hoffmann","samaras","koufos","kritikos","papp","jensen",
-		"waage","kvaran","rossi","russo","ferrari","esposito", "bianchi","romano","emine","egzon","arben","yilmaz","demir","sahin","celik","kaya",
-		"aydin","ozdemir","arslan","dogan","kilic","yildiz","ozturk","yildirim","melnyk","kovalenko","boyko","koval","moroz","petrenko","robinson","wood",
-		"ritchie","gosling","gontier","john","anders","anders","bezos","ian","cook","brian","gecdogan","richard","petr","donald"}; 	
+		const char* surnames[] = {"Smith","Johnson","Williams","Brown","Jones","Rossum","Watson","Stone","Miller","Davis","Torvalds","Garcia","Rodrigez","Wilson", "Ethan",
+		"Anderson","Clarke","Thomas","Lee","Ava","White","Moore","Hernandez","Harris","Sofia","Grace","Lewis","Stroustrup","Hall","Zoey",
+		"Walker","Perez","Gabriel", "Lopez","Newton","Edison","Evan","Robinson","Dorsey","Alexa","Fabrice","Eder","Fischer","Clark","Jobs",
+		"Doug","Connor","Arianna","Scarlett","Eva","Again","Schwarz", "Maier","Mayr","Egger","Claes","Nielsen","Petersen","Madsen","Ilves",
+		"Robert","Leroy","Lion","Martin","Hawking","Meyer","Weber","Schulz","Becker","Hoffmann","Samaras","koufos","Kritikos","Papp","Jensen",
+		"Waage","Kvaran","Rossi","Russo","Ferrari","Esposito", "Bianchi","Romano","Emine","Egzon","Arben","Yilmaz","Demir","Sahin","Celik","Kaya",
+		"Aydin","Ozdemir","Arslan","Dogan","Kilic","Yildiz","Ozturk","Yildirim","Melnyk","Kovalenko","Boyko","Koval","Moroz","Petrenko","Robinson","Wood",
+		"Ritchie","Gosling","Gontier","John","Anders","Bezos","Ian","Cook","Brian","Gecdogan","Richard","Petr","Donald"}; 	
 		srand(time(NULL));
   		std::string name = "";
 
