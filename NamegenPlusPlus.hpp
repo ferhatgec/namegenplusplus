@@ -13,7 +13,6 @@
 #include <iomanip>
 #include <stdlib.h>
 
-// TODO: Add sensible names generator.
 // TODO: Parse different regions.
 
 namespace namegenplusplus {
