@@ -11,6 +11,8 @@ int main() {
 
   namegenplusplus::PrintSrg(length);
 
+  namegenplusplus::GenerateAndSaveToFile("ExampleNames.txt", length);
+
   return 0;
 
 }
