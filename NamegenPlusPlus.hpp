@@ -12,12 +12,13 @@
 #include <vector>
 #include <iomanip>
 #include <stdlib.h>
+#include <fstream>
 
 // TODO: Parse different regions.
 
 namespace namegenplusplus {
 	static std::string SensibleNamegen(int length) {
-		const char* names[] = {"Sophia","Sanjay","Jacob","Jon","Isabella","Guido","Emma","William","Jayden","Mehmet","Emily","Mia","Noah","Michael", "ethan",
+		const char* names[] = {"Sophia","Sanjay","Jacob","Jon","Isabella","Guido","Emma","William","Jayden","Mehmet","Emily","Mia","Noah","Michael", "Ethan",
 		"Chloe","Aiden","Daniel","Elizabeth","Ava","Avery","Benjamin","Gennady","David","Sofia","Grace","Andrew","Bjarne","Logan","Zoey","Alexis","Lucas","Gabriel",
 		"Kaylee","Isaac","Taylor","Evan","Landon","Jack","Alexa","Fabrice","Aaron","Brandon","Linus","Steve","Dough","Connor","Arianna","Scarlett","Eva", "bourne",
 		"Dennis","James","Adam","John","Anders","Stephen","Jeff","Ian","Tim","Brian","Ken","Ferhat","Richard","Petr","Donald"};
@@ -81,6 +82,22 @@ namespace namegenplusplus {
 	
 	static void PrintSrg(int len) {
 		printf(namegenplusplus::SensibleNamegen(len).c_str()); printf("\n");		
+	}
+	static void GenerateAndSaveToFile(std::string fileNameAndExtension, int amountOfNames){
+
+			std::ofstream outputFile(fileNameAndExtension);
+			std::vector<std::string> Vec;
+			Vec.push_back(namegenplusplus::SensibleNamegen(amountOfNames));
+			for(auto x : Vec){
+
+
+				outputFile<<x<<std::endl;
+
+				
+			}
+			outputFile.eof();
+
+
 	}
 }
 
