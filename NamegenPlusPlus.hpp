@@ -9,7 +9,6 @@
 #define NAMEGEN_PLUS_PLUS_HPP
 
 #include <iostream>
-#include <iostream>
 #include <vector>
 #include <iomanip>
 #include <stdlib.h>
@@ -85,20 +84,13 @@ namespace namegenplusplus {
 		printf(namegenplusplus::SensibleNamegen(len).c_str()); printf("\n");		
 	}
 	static void GenerateAndSaveToFile(std::string fileNameAndExtension, int amountOfNames){
-
 			std::ofstream outputFile(fileNameAndExtension);
 			std::vector<std::string> Vec;
 			Vec.push_back(namegenplusplus::SensibleNamegen(amountOfNames));
 			for(auto x : Vec){
-
-
 				outputFile<<x<<std::endl;
-
-				
 			}
 			outputFile.eof();
-
-
 	}
 }
 
